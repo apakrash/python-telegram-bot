@@ -4,12 +4,4 @@ This started off as a echo bot, but as it figures out that the function is the h
 
 For now, it is storing all the chats in a file.
 
-def echo(bot, update):
-    """Echo the user message."""
-    print(update.message.text)
-    allMessages.append(update.message.text)
-    print(type(update.message.text))
-    writeLineToFile(file,update.message.text)
-    update.message.reply_text(update.message.text)
-
-
+Update 17 July : Code Sanitization and Lemmatization done
